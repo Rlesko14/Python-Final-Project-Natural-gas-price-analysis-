@@ -8,7 +8,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 RAW_DIR = Path("data/raw")
 RAW_DIR.mkdir(parents=True, exist_ok=True)
-OUT_FILE = RAW_DIR / "eia_henryhub_weekly_raw.csv"
+OUT_FILE = RAW_DIR / "henry_hub_weekly.csv"
 
 
 def download_henryhub_raw():
