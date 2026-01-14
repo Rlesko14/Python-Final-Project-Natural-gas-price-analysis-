@@ -38,7 +38,7 @@ def download_eia_csv(table_id, filename):
         RAW_DIR.mkdir(parents=True, exist_ok=True)
         out_path = RAW_DIR / filename
         df.to_csv(out_path, index=False)
-        print(f"✅ Successfully saved {table_id} to {out_path}")
+        print(f"Successfully saved {table_id} to {out_path}")
         return True
     except Exception as e:
         print(f" Error downloading table {table_id}: {e}")
